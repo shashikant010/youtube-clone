@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Events Demo</title>
+<style>
+  div {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;}
+</style>
+</head>
+<body>
+<h2>JavaScript Events Demo</h2>
+<!-- onclick event -->
+<button onclick="onClickEvent()">Click Me</button>
+
+<!-- ondblclick event -->
+<button ondblclick="onDoubleClickEvent()">Double Click Me</button>
+
+<!-- onfocus and onblur events -->
+<input type="text" onfocus="onFocusEvent()" onblur="onBlurEvent()" placeholder="Focus on me">
+
+<!-- onchange event -->
+<select onchange="onChangeEvent()">
+  <option value="">Select an option</option>
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
+</select>
+
+<!-- onmouseover and onmouseout events -->
+<div onmouseover="onMouseOverEvent()" onmouseout="onMouseOutEvent()">Mouse over me</div>
+<script>
+  // onclick event handler
+  function onClickEvent() {
+    console.log('Button clicked!');
+  }
+
+  // ondblclick event handler
+  function onDoubleClickEvent() {
+    console.log('Button double-clicked!');}
+
+  // onfocus event handler
+  function onFocusEvent() {
+    console.log('Input field focused');}
+
+  // onblur event handler
+  function onBlurEvent() {
+    console.log('Input field blurred');}
+
+  // onchange event handler
+  function onChangeEvent() {
+    console.log('Option changed!');}
+
+  // onmouseover event handler
+  function onMouseOverEvent() {
+    console.log('Mouse over element');}
+
+  // onmouseout event handler
+  function onMouseOutEvent() {
+    console.log('Mouse out of element');}
+
+  // window onload event
+  window.onload = function() {
+    console.log('Window loaded');};
+
+  // window onunload event
+  window.onunload = function() {
+    console.log('Window unloaded');};
+</script>
+</body></html>
